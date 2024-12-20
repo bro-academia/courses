@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Bro Academy</title>
+    <style>
+        :root {
+            --primary-color: #1e88e5;
+            --secondary-color: #ffffff;
+            --text-color: #333333;
+            --background-color: #f4f8fb;
+            --accent-color: #42a5f5;
+            --border-radius: 10px;
+            --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            --gradient-bg: linear-gradient(90deg, #1e88e5, #42a5f5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--gradient-bg);
+            color: var(--secondary-color);
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-size: 1.8em;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #cce7ff;
+        }
+
+        .courses-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .courses-section h2 {
+            font-size: 2.4em;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+        }
+
+        .course-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .course-card {
+            background: var(--secondary-color);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 20px;
+            width: 300px;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .course-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .course-card h3 {
+            color: var(--accent-color);
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .course-card p {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        .course-card a {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--secondary-color);
+            background: var(--primary-color);
+            padding: 10px 20px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-size: 1em;
+            transition: background 0.3s ease;
+        }
+
+        .course-card a:hover {
+            background: var(--accent-color);
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: var(--secondary-color);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .course-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bro Academy - Courses</h1>
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="courses-section">
+    <h2>Our Courses</h2>
+    <div class="course-list">
+        <div class="course-card">
+            <h3>Data Engineering</h3>
+            <p>Master Python, AWS, SQL, and Big Data technologies. Learn Databricks and PySpark for real-world applications.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="course-card">
+            <h3>Web Development</h3>
+            <p>Build dynamic websites using HTML, CSS, JavaScript, and frameworks like React and Angular.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="course-card">
+            <h3>Machine Learning</h3>
+            <p>Explore AI with Python, TensorFlow, and Scikit-learn. Develop predictive models and deploy them.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="course-card">
+            <h3>Cloud Computing</h3>
+            <p>Get hands-on with AWS, Azure, and Google Cloud. Understand cloud architecture and DevOps practices.</p>
+            <a href="#">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Bro Academy. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

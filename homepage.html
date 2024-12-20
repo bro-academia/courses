@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Platform</title>
+    <style>
+        :root {
+            --primary-color: #1e88e5;
+            --secondary-color: #ffffff;
+            --text-color: #333333;
+            --background-color: #f4f8fb;
+            --accent-color: #42a5f5;
+            --border-radius: 10px;
+            --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            --gradient-bg: linear-gradient(90deg, #1e88e5, #42a5f5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--gradient-bg);
+            color: var(--secondary-color);
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--box-shadow);
+        }
+
+        header h1 {
+            font-size: 1.8em;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #cce7ff;
+        }
+
+        .hero {
+            background: var(--gradient-bg);
+            color: var(--secondary-color);
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+        }
+
+        .features {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: var(--secondary-color);
+        }
+
+        .features h2 {
+            font-size: 2.4em;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+        }
+
+        .features .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .features .card {
+            background: var(--background-color);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            width: 300px;
+            text-align: left;
+            box-shadow: var(--box-shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .features .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .features .card h3 {
+            color: var(--accent-color);
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .features .card p {
+            font-size: 1em;
+            color: var(--text-color);
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: var(--secondary-color);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2em;
+            }
+
+            .features .card {
+                width: 100%;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bro Academy</h1>
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Empower Your Learning Journey</h1>
+    <p>Discover interactive courses, expert instructors, and certifications to enhance your skills and career.</p>
+</section>
+
+<section class="features">
+    <h2>Our Features</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Interactive Courses</h3>
+            <p>Engage in hands-on learning with our interactive courses.</p>
+        </div>
+        <div class="card">
+            <h3>Expert Instructors</h3>
+            <p>Learn from industry experts and seasoned professionals.</p>
+        </div>
+        <div class="card">
+            <h3>Certifications</h3>
+            <p>Get certified and boost your career prospects.</p>
+        </div>
+        <div class="card">
+            <h3>Placement Assistance</h3>
+            <p>Get assistance from industry experts.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Learnify. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
